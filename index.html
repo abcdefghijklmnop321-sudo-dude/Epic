@@ -190,8 +190,6 @@
   <!-- Login Section -->
   <div id="loginContainer" class="login-container">
     <h2>Login</h2>
-    <input type="text" id="username" class="login-input" placeholder="Username" required />
-    <input type="password" id="password" class="login-input" placeholder="Password" required />
     <button class="login-button" onclick="validateLogin()">Login</button>
     <p id="error-message"></p>
   </div>
@@ -223,18 +221,13 @@
   <script>
     // Validate login credentials and unlock the game section on success
     function validateLogin() {
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
-      const errorMessage = document.getElementById("error-message");
+      
 
-      if (username === "hamzah" && password === "1989") {
-        alert("Login successful!");
+      
         // Hide the login container and show the games section
         document.getElementById("loginContainer").style.display = "none";
         document.getElementById("gameSection").style.display = "block";
-      } else {
-        errorMessage.textContent = "Invalid username or password. Try again.";
-      }
+    
     }
 
     // Setup dark mode toggle functionality
