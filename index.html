@@ -185,8 +185,7 @@
   </style>
 </head>
 <body>
-  <h1>Unblocked Games Hub</h1>
-
+  <h1>Unblocked Games Hub</h1
   <!-- Login Section -->
   <div id="loginContainer" class="login-container">
     <h2>press the button stupid</h2>
@@ -230,12 +229,7 @@
     document.body.classList.toggle("dark-mode");
     }
 
-    // Setup dark mode toggle functionality
-    function setupDarkMode() {
-      document.getElementById("darkModeButton").addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-      });
-    }
+
 
     // Launch a Bing search in a new window/tab
     function searchWeb() {
@@ -282,6 +276,7 @@
         document.getElementById("searchButton").disabled = document.getElementById("searchBox").value.trim() === "";
       });
     });
+    window.onload = ValidateLogin
   </script>
 </body>
 </html>
