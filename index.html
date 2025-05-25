@@ -68,7 +68,7 @@
 
     /* Games Section */
     #gameSection {
-      display: none;
+      display: block;
     }
 
  
@@ -156,9 +156,7 @@
 
  
 
-    .dark-mode {
-      background: #222;
-    }
+ 
   </style>
 </head>
 <body>
@@ -189,16 +187,7 @@
   </div>
 
   <script>
-    // Validate login credentials and unlock the game section on success
-    function validateLogin() {
-      
-
-      
-        // Hide the login container and show the games section
-        document.getElementById("loginContainer").style.display = "none";
-        document.getElementById("gameSection").style.display = "block";
-    document.body.classList.toggle("dark-mode");
-    }
+    
 
 
 
@@ -247,7 +236,7 @@
         document.getElementById("searchButton").disabled = document.getElementById("searchBox").value.trim() === "";
       });
     });
-    window.onload = ValidateLogin;
+    
   </script>
 </body>
 </html>
