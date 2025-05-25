@@ -186,9 +186,7 @@
 </head>
 <body>
   <h1>Unblocked Games Hub</h1>
-<script>
-   ValidateLogin()
-     </script>
+
   <!-- Login Section -->
   <div id="loginContainer" class="login-container">
     <h2>press the button stupid</h2>
@@ -229,7 +227,7 @@
         // Hide the login container and show the games section
         document.getElementById("loginContainer").style.display = "none";
         document.getElementById("gameSection").style.display = "block";
-    setupDarkMode()
+    document.body.classList.toggle("dark-mode");
     }
 
     // Setup dark mode toggle functionality
